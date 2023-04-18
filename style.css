@@ -41,10 +41,12 @@ ul {
   margin: 0;
   padding: 0px;
 }
-li, h3 {
+li,
+h3 {
   list-style: none;
 }
-input,button{
+input,
+button{
   outline: none;
 }
 .btn {
@@ -117,7 +119,7 @@ input,button{
   font-size: 18px;
   width: 226px;
 }
-.item >  .task-edit {
+.item > .task-edit {
   width: 226px;
 }
 .btn.delete .btn__icon {
