@@ -12,7 +12,7 @@
         charset="utf-8">
   </head>
   <body class="page">
-    <div class="header">
+    <header class="header">
       <img
           class="baner"
           src="./eisenhower-matrix.jpg">
@@ -21,14 +21,14 @@
           href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?
       </a>
-    </div>
-    <div class="main">
-      <p id="top-tolist">
-        <label
-            class="caption"
-            for="new-task">
-          Add Item
-        </label>
+    </header>
+    <main class="main">
+      <div class="main__list" id="top-tolist">
+        <h3 class="caption caption_margin-mod">
+          <label for="new-task">
+            Add Item
+          </label>
+        </h3>
         <div class="task-row-wrap">
           <input
               id="new-task"
@@ -36,7 +36,7 @@
               type="text">
           <button class="btn">Add</button>
         </div>
-      </p>
+      </div>
       <h3 class="caption">Todo</h3>
       <ul
           class="list"
@@ -46,7 +46,7 @@
           <input
               class="task-checkbox"
               type="checkbox">
-          <label class="task task-text">Pay Bills</label>
+          <span class="task task-text">Pay Bills</span>
           <input
               type="text"
               class="task task-edit">
@@ -59,7 +59,7 @@
           <input
               class="task-checkbox"
               type="checkbox">
-          <label class="task task-text">Go Shopping</label>
+          <span class="task task-text">Go Shopping</span>
           <input
               type="text"
               value="Go Shopping"
@@ -80,7 +80,7 @@
               class="task-checkbox"
               type="checkbox"
               checked>
-          <label class="task task-text">See the Doctor</label>
+          <span class="task task-text">See the Doctor</span>
           <input
               type="text"
               class="task task-edit">
@@ -90,7 +90,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
