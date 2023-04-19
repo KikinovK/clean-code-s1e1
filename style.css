@@ -10,7 +10,7 @@
   display: block;
   text-align: right;
 }
-.header .baner {
+.header .header__pic {
   width: 100%;
 }
 .header .header__link {
@@ -29,15 +29,16 @@
   width: 500px;
   margin: 0 auto 0;
 }
-.main__list {
+.main__header {
   margin: 16px 0;
 }
-.task {
+.task__text,
+.task__edit {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
-.task-row-wrap {
+.task__row-wrap {
   display: flex;
 }
 ul {
@@ -74,7 +75,7 @@ button{
   margin: 0;
   text-transform: uppercase;
 }
-.task-edit {
+.task__edit {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -86,22 +87,22 @@ button{
   font-family: "Lato", sans-serif;
   color: #888;
 }
-.task-edit:focus {
+.task__edit:focus {
   color: #333;
 }
 
 /* New Task */
 /* .caption[for="new-task"], */
-.caption_margin-mod {
+.caption_mod-margin {
   display: block;
   margin: 0 0 20px;
 }
-.task-edit#new-task {
+.task__edit.task__edit_mod_add{
   width: 318px;
 }
 
 /* Task list */
-.item {
+.task__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -110,47 +111,47 @@ button{
   justify-content: space-between;
   align-items: center;
 }
-.item > * {
+.task__item > * {
   vertical-align: middle;
 }
 
-.item > .task-checkbox {
+.task__checkbox {
   margin: 0 10px;
 }
-.item > .task-text {
+.task__text {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.item > .task-edit {
+.task__edit {
   width: 226px;
 }
-.btn.delete .btn__icon {
+.btn__icon {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.btn.delete .btn__icon:hover {
+.btn__icon:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.list#completed-tasks .task-text {
+.task__list.task__list_mod-completed .task__text {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list .item .task-edit {
+.task__item .task__edit {
   display: none;
 }
 
-.list .item.edit-mode .task-edit {
+.task__item.task__item_state_edit .task__edit {
   display: inline-block;
   width: 224px;
 }
 
-.list .item.edit-mode .task-text {
+.task__item.task__item_state_edit .task__text {
   display: none;
 }
