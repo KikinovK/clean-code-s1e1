@@ -11,7 +11,7 @@
 var CLASSNAMES = {
   listItem: 'task__item',
   task: 'task',
-  taskInput: 'task__edit_mod_add',
+  taskInput: 'task__edit_mod-add',
   editInput: 'task__edit',
   checkBox: 'task__checkbox',
   label: 'task__text',
@@ -19,9 +19,9 @@ var CLASSNAMES = {
   img: 'btn__icon',
   completedTasks: 'task__list_mod-completed',
   incompleteTasks: 'task__list_mod-incomplete',
-  editButton: 'btn_mod_edit',
-  deleteButton: 'btn_mod_delete',
-  addButton: 'btn_mod_add',
+  editButton: 'btn_mod-edit',
+  deleteButton: 'btn_mod-delete',
+  addButton: 'btn_mod-add',
 }
 
 var taskInput=document.querySelector(`.${CLASSNAMES.taskInput}`);//Add a new task.
@@ -105,11 +105,11 @@ var editTask=function(){
   var editInput=listItem.querySelector('input[type=text]');
   var label=listItem.querySelector(`.${CLASSNAMES.label}`);
   var editBtn=listItem.querySelector(`.${CLASSNAMES.editButton}`);
-  var containsClass=listItem.classList.contains("task__item_state_edit");
-  //If class of the parent is .task__item_state_edit
+  var containsClass=listItem.classList.contains("task__item_state-edit");
+  //If class of the parent is .task__item_state-edit
   if(containsClass){
 
-    //switch to .task__item_state_edit
+    //switch to .task__item_state-edit
     //label becomes the inputs value.
     label.innerText=editInput.value;
     editBtn.innerText="Edit";
@@ -118,8 +118,8 @@ var editTask=function(){
     editBtn.innerText="Save";
   }
 
-  //toggle .task__item_state_edit on the parent.
-  listItem.classList.toggle("task__item_state_edit");
+  //toggle .task__item_state-edit on the parent.
+  listItem.classList.toggle("task__item_state-edit");
 };
 
 

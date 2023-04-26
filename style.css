@@ -97,7 +97,7 @@ button{
   display: block;
   margin: 0 0 20px;
 }
-.task__edit.task__edit_mod_add{
+.task__edit.task__edit_mod-add{
   width: 318px;
 }
 
@@ -147,11 +147,11 @@ button{
   display: none;
 }
 
-.task__item.task__item_state_edit .task__edit {
+.task__item.task__item_state-edit .task__edit {
   display: inline-block;
   width: 224px;
 }
 
-.task__item.task__item_state_edit .task__text {
+.task__item.task__item_state-edit .task__text {
   display: none;
 }
