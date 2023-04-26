@@ -26,7 +26,7 @@
       </a>
     </header>
     <main class="main">
-      <div class="main__header">
+      <section class="main__header">
         <h3 class="caption caption_mod-margin">
           <label class= "task__edit-label" for="new-task">
             Add Item
@@ -39,63 +39,67 @@
               type="text">
           <button class="btn btn_mod-add">Add</button>
         </div>
-      </div>
-      <h3 class="caption">Todo</h3>
-      <ul class="task__list task__list_mod-incomplete">
-        <li class="task__item">
-          <input
-              class="task__checkbox"
-              type="checkbox">
-          <span class="task__text">Pay Bills</span>
-          <input
-              type="text"
-              class="task__edit">
-          <button class="btn btn_mod-edit">Edit</button>
-          <button class="btn btn_mod-delete">
-            <img
-                class="btn__icon"
-                src="./remove.svg"
-                alt="remove image">
-          </button>
-        </li>
-        <li class="task__item task__item_state-edit">
-          <input
-              class="task__checkbox"
-              type="checkbox">
-          <span class="task__text">Go Shopping</span>
-          <input
-              type="text"
-              value="Go Shopping"
-              class="task__edit">
-          <button class="btn btn_mod-edit">Save</button>
-          <button class="btn btn_mod-delete">
-            <img
-                class="btn__icon"
-                src="./remove.svg"
-                alt="remove image">
-          </button>
-        </li>
-      </ul>
-      <h3 class="caption">Completed</h3>
-      <ul class="task__list task__list_mod-completed">
-        <li class="task__item">
-          <input
-              class="task__checkbox"
-              type="checkbox"
-              checked>
-          <span class="task__text">See the Doctor</span>
-          <input
-              type="text"
-              class="task__edit">
-          <button class="btn btn_mod-edit">Edit</button>
-          <button class="btn btn_mod-delete">
-            <img
-                class="btn__icon"
-                src="./remove.svg"
-                alt="remove image">
-          </button>
-        </li>
-      </ul>
+      </section>
+      <section>
+        <h3 class="caption">Todo</h3>
+        <ul class="task__list task__list_mod-incomplete">
+          <li class="task__item">
+            <input
+                class="task__checkbox"
+                type="checkbox">
+            <span class="task__text">Pay Bills</span>
+            <input
+                type="text"
+                class="task__edit">
+            <button class="btn btn_mod-edit">Edit</button>
+            <button class="btn btn_mod-delete">
+              <img
+                  class="btn__icon"
+                  src="./remove.svg"
+                  alt="remove image">
+            </button>
+          </li>
+          <li class="task__item task__item_state-edit">
+            <input
+                class="task__checkbox"
+                type="checkbox">
+            <span class="task__text">Go Shopping</span>
+            <input
+                type="text"
+                value="Go Shopping"
+                class="task__edit">
+            <button class="btn btn_mod-edit">Save</button>
+            <button class="btn btn_mod-delete">
+              <img
+                  class="btn__icon"
+                  src="./remove.svg"
+                  alt="remove image">
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h3 class="caption">Completed</h3>
+        <ul class="task__list task__list_mod-completed">
+          <li class="task__item">
+            <input
+                class="task__checkbox"
+                type="checkbox"
+                checked>
+            <span class="task__text">See the Doctor</span>
+            <input
+                type="text"
+                class="task__edit">
+            <button class="btn btn_mod-edit">Edit</button>
+            <button class="btn btn_mod-delete">
+              <img
+                  class="btn__icon"
+                  src="./remove.svg"
+                  alt="remove image">
+            </button>
+          </li>
+        </ul>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
