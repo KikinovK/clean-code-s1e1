@@ -26,13 +26,13 @@
       </a>
     </header>
     <main class="main">
-      <section class="main__header">
-        <h3 class="caption caption_mod-margin">
+      <section class="todo todo_mod-position">
+        <h3 class="caption caption_mod-position">
           <label class= "task__edit-label" for="new-task">
             Add Item
           </label>
         </h3>
-        <div class="task__row-wrap">
+        <div class="task">
           <input
               id="new-task"
               class="task__edit task__edit_mod-add"
@@ -40,10 +40,10 @@
           <button class="btn btn_mod-add">Add</button>
         </div>
       </section>
-      <section>
+      <section class="todo">
         <h3 class="caption">Todo</h3>
-        <ul class="task__list task__list_mod-incomplete">
-          <li class="task__item">
+        <ul class="todo__list todo__list_mod-incomplete">
+          <li class="todo__item task">
             <input
                 class="task__checkbox"
                 type="checkbox">
@@ -59,7 +59,7 @@
                   alt="remove image">
             </button>
           </li>
-          <li class="task__item task__item_state-edit">
+          <li class="todo__item task task_state-edit">
             <input
                 class="task__checkbox"
                 type="checkbox">
@@ -78,10 +78,10 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="todo">
         <h3 class="caption">Completed</h3>
-        <ul class="task__list task__list_mod-completed">
-          <li class="task__item">
+        <ul class="todo__list todo__list_mod-completed">
+          <li class="todo__item task">
             <input
                 class="task__checkbox"
                 type="checkbox"
